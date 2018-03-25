@@ -16,6 +16,4 @@ public class GraphView extends JFrame {
         this.graph = graph;
 
     }
-
-
 }

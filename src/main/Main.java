@@ -14,9 +14,6 @@ public class Main {
 
         Dihotomy dihotomy = new Dihotomy(graph);
 
-
-
-
         String str = "";
     }
 }
