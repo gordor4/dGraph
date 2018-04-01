@@ -1,13 +1,13 @@
-package main;
+package startup;
 
 import algo.Dihotomy;
 import data.model.Graph;
+import draw.GraphView;
 import utils.FileUtils;
-import utils.GraphUtils;
 
-public class Main {
+import javax.swing.*;
 
-
+public class App {
     public static void main(String[] args) {
 
         Graph graph = FileUtils.readGraph("C:\\Users\\rus\\IdeaProjects\\graph\\files\\vertices-0.txt");
@@ -15,5 +15,10 @@ public class Main {
         Dihotomy dihotomy = new Dihotomy(graph);
 
         String str = "";
+
+        GraphView frame = new GraphView(graph);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 320);
+        frame.setVisible(true);
     }
 }
