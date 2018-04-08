@@ -7,6 +7,7 @@ import utils.FileUtils;
 
 import javax.swing.*;
 
+
 public class App {
     public static void main(String[] args) {
 
@@ -17,8 +18,5 @@ public class App {
         String str = "";
 
         GraphView frame = new GraphView(graph);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 320);
-        frame.setVisible(true);
     }
 }
