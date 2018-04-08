@@ -48,4 +48,12 @@ public class FileUtils {
 
    }
 
+   public static void graphToDot(Graph graph) {
+       String dotFile = "";
+
+
+
+
+   }
+
 }

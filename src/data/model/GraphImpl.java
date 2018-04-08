@@ -16,12 +16,13 @@ public class GraphImpl implements Graph {
         this.lists = lists;
     }
 
+
     public List<List<Pair<Integer, Integer>>> getLists() {
         return lists;
     }
 
     @Override
-    public List<Integer> getVertextEdges(int k) {
+    public List<Integer> getVertexEdges(int k) {
         List<Integer> values = new ArrayList<>();
         for(Pair<Integer, Integer> val : lists.get(k)) {
             values.add(val.getKey());
@@ -69,7 +70,7 @@ public class GraphImpl implements Graph {
     }
 
     @Override
-    public Integer getVertexEdges(int i) {
+    public Integer getVertexEdge(int i) {
         return lists.get(i).size();
     }
 }

@@ -22,7 +22,7 @@ public interface Graph {
 
     Integer get(int i, int j);
 
-    Integer getVertexEdges(int i);
+    Integer getVertexEdge(int i);
 
-    List<Integer> getVertextEdges(int k);
+    List<Integer> getVertexEdges(int k);
 }

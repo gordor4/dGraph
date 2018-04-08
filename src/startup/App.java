@@ -11,7 +11,7 @@ import javax.swing.*;
 public class App {
     public static void main(String[] args) {
 
-        Graph graph = FileUtils.readGraph("C:\\Users\\rus\\IdeaProjects\\graph\\files\\vertices-0.txt");
+        Graph graph = FileUtils.readGraph(".\\files\\vertices-0.txt");
 
         Dihotomy dihotomy = new Dihotomy(graph);
 
